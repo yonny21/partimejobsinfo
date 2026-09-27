@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="am" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>የኦንላይን ዓለም አቀፍ ስራዎች | Global Remote Work Ethiopia</title>
+  <!-- Google Fonts: Noto Sans Ethiopic & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            ethiopic: ['"Noto Sans Ethiopic"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans Ethiopic"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              400: '#34d399',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857',
+              800: '#065f46',
+            },
+            accent: {
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+            },
+            dark: {
+              900: '#0b0f17',
+              800: '#111827',
+              700: '#1f2937',
+              600: '#374151'
+            }
+          },
+          animation: {
+            'pulse-glow': 'pulseGlow 2.5s infinite',
+            'float': 'float 4s ease-in-out infinite',
+            'shimmer': 'shimmer 2s linear infinite'
+          },
+          keyframes: {
+            pulseGlow: {
+              '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+              '50%': { opacity: '0.8', transform: 'scale(1.04)' }
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Noto Sans Ethiopic', 'Plus Jakarta Sans', sans-serif;
+      background-color: #0b0f17;
+      color: #f3f4f6;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.72);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-card-hover:hover {
+      border-color: rgba(16, 185, 129, 0.4);
+      box-shadow: 0 12px 35px -8px rgba(16, 185, 129, 0.2);
+    }
+    .cta-glow-btn {
+      background: linear-gradient(135deg, #10b981 0%, #059669 50%, #0284c7 100%);
+      box-shadow: 0 0 25px rgba(16, 185, 129, 0.45);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .cta-glow-btn:hover {
+      box-shadow: 0 0 35px rgba(14, 165, 233, 0.65);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-dark-900 text-gray-100 antialiased selection:bg-brand-500 selection:text-white pb-20 md:pb-0">
+
+  <!-- TARGET REDIRECT URL CONSTANT: https://addismobileapps.com/sms.html -->
+
+  <div class="relative z-50 bg-gradient-to-r from-emerald-600 via-teal-700 to-cyan-600 text-white text-xs sm:text-sm font-medium py-2.5 px-4 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="flex h-2.5 w-2.5 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-yellow-300 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-yellow-400"></span>
+        </span>
+        <span class="font-semibold text-yellow-200">አስቸኳይ ማስታወቂያ:</span>
+        <span>የዚህ ሳምንት አዳዲስ ክፍት የኦንላይን ስራዎች ክፍት ቦታዎች <span class="underline font-bold" id="slots-badge">24</span> ብቻ ቀርተዋል!</span>
+      </div>
+      <a href="https://addismobileapps.com/sms.html" class="inline-flex items-center gap-1.5 bg-white/20 hover:bg-white/30 text-white px-3 py-1 rounded-full text-xs font-semibold backdrop-blur-sm transition">
+        <span>ምዝገባ ያጠናቁ</span>
+        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+      </a>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-dark-900/80 backdrop-blur-xl border-b border-gray-800/80 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-500 to-accent-500 p-0.5 shadow-lg shadow-brand-500/20 group-hover:scale-105 transition">
+          <div class="w-full h-full bg-dark-900 rounded-[10px] flex items-center justify-center">
+            <i data-lucide="globe-2" class="w-6 h-6 text-brand-400"></i>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2">
+            <span class="text-xl font-bold tracking-tight text-white font-sans">GlobalWork<span class="text-brand-400">.et</span></span>
+            <span class="hidden sm:inline-flex items-center text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">Verified</span>
+          </div>
+          <span class="text-[11px] text-gray-400">ዓለም አቀፍ የርቀት ስራዎች</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+        <a href="#jobs" class="hover:text-brand-400 transition-colors">ክፍት ስራዎች</a>
+        <a href="#how-it-works" class="hover:text-brand-400 transition-colors">እንዴት ይሰራል?</a>
+        <a href="#payments" class="hover:text-brand-400 transition-colors">የክፍያ መንገዶች</a>
+        <a href="#testimonials" class="hover:text-brand-400 transition-colors">የተጠቃሚዎች አስተያየት</a>
+        <a href="#faq" class="hover:text-brand-400 transition-colors">ተደጋጋሚ ጥያቄዎች</a>
+      </nav>
+
+      <!-- Header Action -->
+      <div class="flex items-center gap-3">
+        <a href="https://addismobileapps.com/sms.html" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-semibold text-sm text-white cta-glow-btn">
+          <span>ምዝገባ ያጠናቁ</span>
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+        </a>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-gray-800 text-gray-300 hover:text-white" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 bg-dark-800 border-b border-gray-700">
+      <div class="flex flex-col space-y-3 font-medium text-gray-200">
+        <a href="#jobs" class="p-2 hover:bg-gray-700 rounded-lg">ክፍት ስራዎች</a>
+        <a href="#how-it-works" class="p-2 hover:bg-gray-700 rounded-lg">እንዴት ይሰራል?</a>
+        <a href="#payments" class="p-2 hover:bg-gray-700 rounded-lg">የክፍያ መንገዶች</a>
+        <a href="#testimonials" class="p-2 hover:bg-gray-700 rounded-lg">የተጠቃሚዎች አስተያየት</a>
+        <a href="#faq" class="p-2 hover:bg-gray-700 rounded-lg">ተደጋጋሚ ጥያቄዎች</a>
+        <a href="https://addismobileapps.com/sms.html" class="mt-2 text-center py-3 rounded-xl font-bold text-white cta-glow-btn">
+          ምዝገባ ያጠናቁ
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+    <!-- Glowing background gradients -->
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-tr from-brand-600/25 to-accent-600/20 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+    <div class="absolute top-1/2 right-[-150px] w-[400px] h-[400px] bg-brand-500/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-4xl mx-auto space-y-6">
+        
+        <!-- Live Badge -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-gray-800/80 border border-gray-700/80 text-gray-300 text-xs sm:text-sm font-medium shadow-inner animate-float">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+          <span class="text-emerald-400 font-semibold">2026 የተረጋገጡ የውጭ ሀገር ስራዎች</span>
+          <span class="text-gray-500">|</span>
+          <span class="text-gray-300">በቀን 2-4 ሰዓት ብቻ</span>
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.2] text-white">
+          ከቤትዎ ሆነው በ<span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">ዶላር ($) እና ዩሮ (€)</span> የሚከፍሉ ዓለም አቀፍ ስራዎችን ይስሩ!
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-base sm:text-lg lg:text-xl text-gray-300 font-light leading-relaxed max-w-2xl mx-auto">
+          በአሜሪካ፣ ካናዳ፣ እንግሊዝ እና አውሮፓ የሚገኙ ታላላቅ የቴክኖሎጂና የቢዝነስ ኩባንያዎች የሚያወጧቸውን የርቀት ስራዎች ይቀላቀሉ። ምንም ውስብስብ የውጭ ሀገር ቪዛ ወይም ረጅም ልምድ አያስፈልግም!
+        </p>
+
+        <!-- CTA Buttons Group -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <a href="https://addismobileapps.com/sms.html" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base sm:text-lg text-white cta-glow-btn flex items-center justify-center gap-3">
+            <span>ምዝገባ ያጠናቁ</span>
+            <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+          </a>
+          <a href="#jobs" class="w-full sm:w-auto px-7 py-4 rounded-xl font-semibold text-base text-gray-300 bg-gray-800/90 hover:bg-gray-700/90 border border-gray-700 transition flex items-center justify-center gap-2">
+            <span>ክፍት ስራዎችን ይመልከቱ</span>
+            <i data-lucide="chevron-down" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Trust Features Checklist -->
+        <div class="pt-6 flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs sm:text-sm text-gray-300">
+          <div class="flex items-center gap-2">
+            <i data-lucide="shield-check" class="w-4 h-4 text-brand-400"></i>
+            <span>100% አስተማማኝና የተረጋገጠ</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="smartphone" class="w-4 h-4 text-brand-400"></i>
+            <span>በስልክ ወይም በኮምፒውተር</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i data-lucide="banknote" class="w-4 h-4 text-brand-400"></i>
+            <span>ክፍያ በቴሌብር እና በኢትዮጵያ ባንኮች</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Counter Stats -->
+      <div class="mt-14 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        <div class="glass-card rounded-2xl p-5 text-center border-l-4 border-l-emerald-500">
+          <div class="text-2xl sm:text-3xl font-extrabold text-white font-sans">$500 - $3,500</div>
+          <div class="text-xs sm:text-sm text-gray-400 mt-1">አማካኝ ወርሃዊ ገቢ (በዶላር)</div>
+        </div>
+        <div class="glass-card rounded-2xl p-5 text-center border-l-4 border-l-accent-500">
+          <div class="text-2xl sm:text-3xl font-extrabold text-white font-sans">1,820+</div>
+          <div class="text-xs sm:text-sm text-gray-400 mt-1">በስራው ላይ የተሰማሩ ኢትዮጵያውያን</div>
+        </div>
+        <div class="glass-card rounded-2xl p-5 text-center border-l-4 border-l-amber-500">
+          <div class="text-2xl sm:text-3xl font-extrabold text-white font-sans">98.4%</div>
+          <div class="text-xs sm:text-sm text-gray-400 mt-1">የክፍያ እርካታ ምጣኔ</div>
+        </div>
+        <div class="glass-card rounded-2xl p-5 text-center border-l-4 border-l-purple-500">
+          <div class="text-2xl sm:text-3xl font-extrabold text-white font-sans">100%</div>
+          <div class="text-xs sm:text-sm text-gray-400 mt-1">ከቤት የሚሰራ (Fully Remote)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="jobs" class="py-16 bg-dark-800/50 border-t border-b border-gray-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <div class="text-brand-400 text-xs sm:text-sm font-semibold tracking-wider uppercase flex items-center gap-1.5 mb-2">
+            <i data-lucide="briefcase" class="w-4 h-4"></i>
+            ክፍት የስራ እድሎች
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white">
+            የተመረጡ የዓለም አቀፍ ኦንላይን ስራዎች
+          </h2>
+          <p class="text-gray-400 text-sm sm:text-base mt-2">
+            የሚፈልጉትን ዘርፍ ይምረጡ፤ ዝርዝሩን ይመልከቱ እና በአጭር ጊዜ ውስጥ ስራ ይጀምሩ።
+          </p>
+        </div>
+
+        <!-- Counter Indicator -->
+        <div class="flex items-center gap-2 bg-emerald-950/60 border border-emerald-500/30 px-4 py-2 rounded-xl">
+          <i data-lucide="zap" class="w-4 h-4 text-emerald-400"></i>
+          <span class="text-xs sm:text-sm text-emerald-200">በአሁኑ ሰዓት ክፍት የሆኑ: <strong class="text-white">8 ዋና ዋና ዘርፎች</strong></span>
+        </div>
+      </div>
+
+      <!-- Filter Categories Buttons -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none" id="filter-container">
+        <button onclick="filterJobs('all')" class="filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap bg-brand-500 text-white shadow-md transition">
+          ሁሉም ስራዎች (All)
+        </button>
+        <button onclick="filterJobs('entry')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap bg-dark-700 text-gray-300 hover:bg-gray-700 transition">
+          ጀማሪ / ምንም ልምድ የማይጠይቁ
+        </button>
+        <button onclick="filterJobs('support')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap bg-dark-700 text-gray-300 hover:bg-gray-700 transition">
+          የደንበኞች አገልግሎት & ቻት
+        </button>
+        <button onclick="filterJobs('tech')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap bg-dark-700 text-gray-300 hover:bg-gray-700 transition">
+          AI & ዳታ ስራዎች
+        </button>
+        <button onclick="filterJobs('creative')" class="filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium whitespace-nowrap bg-dark-700 text-gray-300 hover:bg-gray-700 transition">
+          ዲዛይን & ሶሻል ሚዲያ
+        </button>
+      </div>
+
+      <!-- Job Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="job-grid">
+        
+        <!-- Job Card 1 -->
+        <div class="job-card glass-card glass-card-hover rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 relative group" data-category="entry">
+          <div class="absolute top-4 right-4">
+            <span class="inline-flex items-center text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+              🔥 ከፍተኛ ተፈላጊ
+            </span>
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <i data-lucide="file-spreadsheet" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">የዳታ ኢንትሪ እና ጽሁፍ ግልባጭ</h3>
+            <p class="text-xs text-gray-400 mb-4 line-clamp-2">
+              ቀላል ጽሁፎችን እና መረጃዎችን ወደ ኤክሴል (Excel) እና ዌብሳይት መመዝገብ፤ የኦዲዮ ፋይሎችን ወደ ጽሁፍ መለወጥ።
+            </p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የክፍያ መጠን:</span>
+                <span class="font-bold text-emerald-400 text-sm">$15 - $22 / በሰዓት</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የስራ ሰዓት:</span>
+                <span class="text-gray-200">የትርፍ ሰዓት / በምቾትዎ</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1">
+                <span class="text-gray-400">የሚፈለገው ደረጃ:</span>
+                <span class="text-gray-200">ምንም ልምድ አያስፈልግም</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2">
+            <a href="https://addismobileapps.com/sms.html" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-500 hover:bg-brand-600 font-semibold text-sm text-white transition shadow-lg shadow-brand-500/20">
+              <span>ሙሉ መረጃ ያግኙ</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Job Card 2 -->
+        <div class="job-card glass-card glass-card-hover rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 relative group" data-category="support">
+          <div class="absolute top-4 right-4">
+            <span class="inline-flex items-center text-[11px] font-bold px-2.5 py-1 rounded-full bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
+              ⚡ ጀማሪ ተስማሚ
+            </span>
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <i data-lucide="message-square" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">የደንበኞች አገልግሎት እና ቻት ድጋፍ</h3>
+            <p class="text-xs text-gray-400 mb-4 line-clamp-2">
+              ለዓለም አቀፍ ኢ-ኮሜርስ ድርጅቶች በኢሜይል እና በቀጥታ ቻት (Live Chat) መልስ መስጠት። ምንም የስልክ ጥሪ የለውም።
+            </p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የክፍያ መጠን:</span>
+                <span class="font-bold text-emerald-400 text-sm">$18 - $28 / በሰዓት</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የስራ ሰዓት:</span>
+                <span class="text-gray-200">ተለዋዋጭ ፈረቃ (Shift)</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1">
+                <span class="text-gray-400">የቋንቋ ችሎታ:</span>
+                <span class="text-gray-200">መሰረታዊ እንግሊዝኛ</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2">
+            <a href="https://addismobileapps.com/sms.html" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gray-700/80 hover:bg-brand-500 font-semibold text-sm text-white transition">
+              <span>ምዝገባ ያጠናቁ</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Job Card 3 -->
+        <div class="job-card glass-card glass-card-hover rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 relative group" data-category="tech">
+          <div class="absolute top-4 right-4">
+            <span class="inline-flex items-center text-[11px] font-bold px-2.5 py-1 rounded-full bg-purple-500/15 text-purple-300 border border-purple-500/30">
+              🤖 አዲስ የስራ ዘርፍ
+            </span>
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <i data-lucide="cpu" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">AI ማሰልጠኛ እና ዳታ ሌብሊንግ</h3>
+            <p class="text-xs text-gray-400 mb-4 line-clamp-2">
+              አርቲፊሻል ኢንተለጀንስ (AI) ሞዴሎችን ለማስተማር ፎቶዎችን፣ ጽሁፎችንና ድምጾችን መለየት እና ደረጃ መስጠት።
+            </p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የክፍያ መጠን:</span>
+                <span class="font-bold text-emerald-400 text-sm">$650 - $1,400 / በወር</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የስራ አይነት:</span>
+                <span class="text-gray-200">በተግባር ቁጥር (Micro-tasks)</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1">
+                <span class="text-gray-400">መሳሪያ:</span>
+                <span class="text-gray-200">ስልክ ወይም ኮምፒውተር</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2">
+            <a href="https://addismobileapps.com/sms.html" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-500 hover:bg-brand-600 font-semibold text-sm text-white transition shadow-lg shadow-brand-500/20">
+              <span>ሙሉ መረጃ ያግኙ</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Job Card 4 -->
+        <div class="job-card glass-card glass-card-hover rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 relative group" data-category="entry">
+          <div class="absolute top-4 right-4">
+            <span class="inline-flex items-center text-[11px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+              🇪🇹 አማርኛ ተናጋሪዎች
+            </span>
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <i data-lucide="languages" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">የትርጉም እና የቋንቋ ስራዎች</h3>
+            <p class="text-xs text-gray-400 mb-4 line-clamp-2">
+              ከእንግሊዝኛ ወደ አማርኛ ወይም በተቃራኒው ዶክመንቶችን፣ መተግበሪያዎችን እና ድረ-ገጾችን ማስተርጎም እና ማረም።
+            </p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የክፍያ መጠን:</span>
+                <span class="font-bold text-emerald-400 text-sm">$0.07 - $0.14 / በቃል</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">አማካኝ ገቢ:</span>
+                <span class="text-gray-200">$400 - $1,200 በወር</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1">
+                <span class="text-gray-400">ብቃት:</span>
+                <span class="text-gray-200">አማርኛ እና እንግሊዝኛ</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2">
+            <a href="https://addismobileapps.com/sms.html" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gray-700/80 hover:bg-brand-500 font-semibold text-sm text-white transition">
+              <span>ምዝገባ ያጠናቁ</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Job Card 5 -->
+        <div class="job-card glass-card glass-card-hover rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 relative group" data-category="support">
+          <div class="absolute top-4 right-4">
+            <span class="inline-flex items-center text-[11px] font-bold px-2.5 py-1 rounded-full bg-amber-500/15 text-amber-300 border border-amber-500/30">
+              💼 ተለዋዋጭ ሰዓት
+            </span>
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <i data-lucide="user-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">የቨርቹዋል ረዳት (Virtual Assistant)</h3>
+            <p class="text-xs text-gray-400 mb-4 line-clamp-2">
+              የውጭ ሀገር ስራ አስኪያጆችን የቀን መቁጠሪያ ማስተካከል፣ ኢሜይሎችን መመለስ እና ቀላል አስተዳደራዊ ስራዎችን መከወን።
+            </p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የክፍያ መጠን:</span>
+                <span class="font-bold text-emerald-400 text-sm">$20 - $35 / በሰዓት</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">ኮንትራት:</span>
+                <span class="text-gray-200">የረጅም ጊዜ ቋሚ ስራ</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1">
+                <span class="text-gray-400">ችሎታ:</span>
+                <span class="text-gray-200">ኢሜይል እና የሰዓት አያያዝ</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2">
+            <a href="https://addismobileapps.com/sms.html" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-500 hover:bg-brand-600 font-semibold text-sm text-white transition shadow-lg shadow-brand-500/20">
+              <span>ሙሉ መረጃ ያግኙ</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Job Card 6 -->
+        <div class="job-card glass-card glass-card-hover rounded-2xl p-6 flex flex-col justify-between transition-all duration-300 relative group" data-category="creative">
+          <div class="absolute top-4 right-4">
+            <span class="inline-flex items-center text-[11px] font-bold px-2.5 py-1 rounded-full bg-pink-500/15 text-pink-300 border border-pink-500/30">
+              📱 ፈጠራ
+            </span>
+          </div>
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center mb-4 group-hover:scale-110 transition">
+              <i data-lucide="share-2" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">የሶሻል ሚዲያ አስተዳደር & Canva ፖስት</h3>
+            <p class="text-xs text-gray-400 mb-4 line-clamp-2">
+              በቀላል አፕሊኬሽኖች (Canva, CapCut) ለቲክቶክ፣ ፌስቡክ እና ኢንስታግራም ፖስቶችን ማዘጋጀትና ማስተዳደር።
+            </p>
+            <div class="space-y-2 mb-6">
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የክፍያ መጠን:</span>
+                <span class="font-bold text-emerald-400 text-sm">$500 - $1,500 / በወር</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1 border-b border-gray-800">
+                <span class="text-gray-400">የስራ ሰዓት:</span>
+                <span class="text-gray-200">በቀን 2-3 ሰዓታት ብቻ</span>
+              </div>
+              <div class="flex items-center justify-between text-xs py-1">
+                <span class="text-gray-400">ተስማሚ ለ:</span>
+                <span class="text-gray-200">ተማሪዎች እና ጀማሪዎች</span>
+              </div>
+            </div>
+          </div>
+          <div class="pt-2">
+            <a href="https://addismobileapps.com/sms.html" class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gray-700/80 hover:bg-brand-500 font-semibold text-sm text-white transition">
+              <span>ምዝገባ ያጠናቁ</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Urgent Callout inside Job section -->
+      <div class="mt-12 text-center bg-gradient-to-r from-emerald-950/40 via-dark-800 to-cyan-950/40 border border-gray-700/60 p-6 sm:p-8 rounded-2xl">
+        <h4 class="text-lg sm:text-xl font-bold text-white mb-2">ለእርስዎ ተስማሚ የሆነውን የስራ እድል አላገኙም?</h4>
+        <p class="text-sm text-gray-300 max-w-xl mx-auto mb-6">
+          በየቀኑ ከ120 በላይ አዳዲስ ዓለም አቀፍ የትርፍና የሙሉ ሰዓት ስራዎች ይጨመራሉ። አሁኑኑ ምዝገባዎን በማጠናቀቅ የመጀመሪያ ተጠቃሚ ይሁኑ።
+        </p>
+        <a href="https://addismobileapps.com/sms.html" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl font-bold text-white cta-glow-btn">
+          <span>አሁኑኑ ይመዝገቡና ስራ ይጀምሩ</span>
+          <i data-lucide="external-link" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="how-it-works" class="py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-400 text-xs sm:text-sm font-semibold tracking-wider uppercase">ቀላል 3 ደረጃዎች</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">ስራ እንዴት መጀመር ይችላሉ?</h2>
+        <p class="text-gray-400 text-sm sm:text-base mt-3">
+          የዓለም አቀፍ ስራዎችን ለማግኘት ረጅም ውጣ ውረድ የለም፤ እነዚህን ቀላል ደረጃዎች ብቻ ይከተሉ።
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        <!-- Connecting Line for Desktop -->
+        <div class="hidden md:block absolute top-1/2 left-1/4 right-1/4 h-0.5 bg-gradient-to-r from-brand-500/40 via-accent-500/40 to-brand-500/40 -translate-y-12 -z-0"></div>
+
+        <!-- Step 1 -->
+        <div class="glass-card rounded-2xl p-7 text-center relative z-10 flex flex-col items-center">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-brand-600 to-emerald-400 text-white flex items-center justify-center text-2xl font-bold shadow-lg shadow-brand-500/30 mb-6">
+            1
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">ምዝገባዎን ያጠናቁ</h3>
+          <p class="text-sm text-gray-300 leading-relaxed mb-6">
+            'ምዝገባ ያጠናቁ' የሚለውን በመጫን መሰረታዊ መረጃዎችን እና የፍላጎት ዘርፍዎን በአጭር ቅጽ ያረጋግጡ።
+          </p>
+          <a href="https://addismobileapps.com/sms.html" class="text-xs font-semibold text-brand-400 hover:text-brand-300 flex items-center gap-1 mt-auto">
+            <span>ደረጃውን ጀምር</span>
+            <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+          </a>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="glass-card rounded-2xl p-7 text-center relative z-10 flex flex-col items-center border-brand-500/40">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-accent-600 to-cyan-400 text-white flex items-center justify-center text-2xl font-bold shadow-lg shadow-accent-500/30 mb-6">
+            2
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">የስራ መመሪያ እና ማረጋገጫ</h3>
+          <p class="text-sm text-gray-300 leading-relaxed mb-6">
+            ስራውን በስልክዎ ወይም በኮምፒውተርዎ እንዴት መስራት እንዳለብዎ አጭር መመሪያና አሰራር በስልክዎ ይደርስዎታል።
+          </p>
+          <span class="text-xs font-medium text-cyan-400 bg-cyan-950/60 px-3 py-1 rounded-full border border-cyan-800">
+            ቀጥተኛ ድጋፍ ይሰጣል
+          </span>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="glass-card rounded-2xl p-7 text-center relative z-10 flex flex-col items-center">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 text-white flex items-center justify-center text-2xl font-bold shadow-lg shadow-purple-500/30 mb-6">
+            3
+          </div>
+          <h3 class="text-xl font-bold text-white mb-3">ስራ ጀምረው ክፍያ ይቀበሉ</h3>
+          <p class="text-sm text-gray-300 leading-relaxed mb-6">
+            ተግባሮችን አጠናቀው በየሳምንቱ ወይም በየወሩ ገቢዎን በቴሌብር፣ በኢትዮጵያ ንግድ ባንክ ወይም በፈለጉት አካውንት ያግኙ!
+          </p>
+          <div class="text-xs font-bold text-emerald-400 flex items-center gap-1">
+            <i data-lucide="check-circle" class="w-4 h-4"></i>
+            <span>ቀጥታ ወደ አካውንትዎ</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action -->
+      <div class="mt-12 text-center">
+        <a href="https://addismobileapps.com/sms.html" class="inline-flex items-center gap-3 px-9 py-4 rounded-xl font-bold text-base sm:text-lg text-white cta-glow-btn">
+          <span>ምዝገባ ያጠናቁ እና ዛሬውኑ ይጀምሩ</span>
+          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="payments" class="py-16 bg-dark-800/40 border-t border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-brand-400 text-xs sm:text-sm font-semibold tracking-wider uppercase">የክፍያ ዋስትና</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">ክፍያዎን እንዴት ይቀበላሉ?</h2>
+        <p class="text-gray-400 text-sm sm:text-base mt-2">
+          የውጭ ሀገር ክፍያዎች ያለምንም እንግልት በቀጥታ ወደ ሀገር ውስጥ በሚሰሩ ህጋዊ የክፍያ አማራጮች ይቀየራሉ።
+        </p>
+      </div>
+
+      <!-- Payment Badges Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+        
+        <div class="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-center group hover:border-emerald-500/50 transition">
+          <div class="w-14 h-14 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-3 group-hover:scale-110 transition">
+            <i data-lucide="smartphone" class="w-7 h-7"></i>
+          </div>
+          <span class="font-bold text-white text-base">ቴሌብር (telebirr)</span>
+          <span class="text-xs text-gray-400 mt-1">ፈጣን እና የቀን ክፍያ</span>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-center group hover:border-blue-500/50 transition">
+          <div class="w-14 h-14 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 mb-3 group-hover:scale-110 transition">
+            <i data-lucide="landmark" class="w-7 h-7"></i>
+          </div>
+          <span class="font-bold text-white text-base">CBE & ሌሎች ባንኮች</span>
+          <span class="text-xs text-gray-400 mt-1">ቀጥታ ወደ ባንክ ሂሳብ</span>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-center group hover:border-indigo-500/50 transition">
+          <div class="w-14 h-14 rounded-full bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-3 group-hover:scale-110 transition">
+            <i data-lucide="credit-card" class="w-7 h-7"></i>
+          </div>
+          <span class="font-bold text-white text-base">PayPal & Payoneer</span>
+          <span class="text-xs text-gray-400 mt-1">በዶላር ለመቆጠብ</span>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 text-center flex flex-col items-center justify-center group hover:border-amber-500/50 transition">
+          <div class="w-14 h-14 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-400 mb-3 group-hover:scale-110 transition">
+            <i data-lucide="shield-check" class="w-7 h-7"></i>
+          </div>
+          <span class="font-bold text-white text-base">100% ዋስትና</span>
+          <span class="text-xs text-gray-400 mt-1">የተጠበቀ የክፍያ ስምምነት</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="testimonials" class="py-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-brand-400 text-xs sm:text-sm font-semibold tracking-wider uppercase">እውነተኛ ተጠቃሚዎች</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">ተጠቃሚዎቻችን ምን ይላሉ?</h2>
+        <p class="text-gray-400 text-sm sm:text-base mt-2">
+          ከቤት ሆነው ዓለም አቀፍ ስራዎችን በመስራት ህይወታቸውን የቀየሩ ወጣቶች ምስክርነት።
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Review 1 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              "በዩኒቨርሲቲ ተማሪ እያለሁ ነበር የትርጉም እና የዳታ ኢንትሪ ስራውን የጀመርኩት። አሁን በቀን 3 ሰዓት ብቻ በመስራት ከቤተሰብ ጥገኝነት ተላቅቄ የራሴን ወርሃዊ ወጪ በዶላር እሸፍናለሁ። እጅግ በጣም አመሰግናለሁ!"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-gray-800">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-500 to-teal-400 flex items-center justify-center font-bold text-white text-sm">
+              ዮ
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">ዮናስ ታደሰ</h4>
+              <p class="text-xs text-brand-400 font-medium">የዳታ ኢንትሪ ሰራተኛ • አዲስ አበባ</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between border-brand-500/30">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              "መጀመሪያ ላይ በኦንላይን በቴሌብር ይከፈላል ሲባል አላመንኩም ነበር። ምዝገባዬን አጠናቅቄ በሁለተኛው ሳምንት የመጀመሪያ ክፍያዬን ስቀበል እምነቴ ጨመረ። የደንበኞች ቻት ድጋፍ ስራ በጣም ቀላል ነው።"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-gray-800">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-accent-500 to-blue-400 flex items-center justify-center font-bold text-white text-sm">
+              ሰ
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">ሰላማዊት አበራ</h4>
+              <p class="text-xs text-brand-400 font-medium">Live Chat Support • ሀዋሳ</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="glass-card rounded-2xl p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-1 text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              "የ AI ሞዴል ዳታ ሌብሊንግ ስራ በስልኬ ብቻ ነው የምሰራው። በትርፍ ሰዓቴ ብቻ በመስራት ከደሞዜ በተጨማሪ ጥሩ ተጨማሪ ገቢ እያገኘሁበት ነው። ማንኛውም ሰው እንዲሞክረው እመክራለሁ።"
+            </p>
+          </div>
+          <div class="flex items-center gap-3 pt-4 border-t border-gray-800">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-400 flex items-center justify-center font-bold text-white text-sm">
+              በ
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">በረከት ግርማ</h4>
+              <p class="text-xs text-brand-400 font-medium">AI Annotator • ድሬዳዋ</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 bg-dark-800/40 border-t border-gray-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12">
+        <span class="text-brand-400 text-xs sm:text-sm font-semibold tracking-wider uppercase">ጥያቄ አለዎት?</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">ተደጋጋሚ ጥያቄዎች እና መልሶች</h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ item 1 -->
+        <div class="glass-card rounded-xl overflow-hidden border border-gray-800 transition">
+          <button class="faq-btn w-full p-5 text-left flex items-center justify-between font-semibold text-white hover:text-brand-400">
+            <span>ስራውን ለመጀመር ምን ምን ነገሮች ያስፈልጋሉ?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-gray-300 border-t border-gray-800/60 pt-3">
+            የሚያስፈልገው ስማርት ስልክ (Smartphone) ወይም ላፕቶፕ ኮምፒውተር፣ አስተማማኝ የኢንተርኔት ግንኙነት እና በቀን ከ2 እስከ 4 ሰዓት ያለው ነፃ ጊዜ ብቻ ነው። ምንም አይነት ረጅም የስራ ልምድ አይጠየቅም።
+          </div>
+        </div>
+
+        <!-- FAQ item 2 -->
+        <div class="glass-card rounded-xl overflow-hidden border border-gray-800 transition">
+          <button class="faq-btn w-full p-5 text-left flex items-center justify-between font-semibold text-white hover:text-brand-400">
+            <span>የእንግሊዝኛ ቋንቋ ችሎታ የግድ አስፈላጊ ነው?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-gray-300 border-t border-gray-800/60 pt-3">
+            አይደለም። እንደ አማርኛ የትርጉም ስራዎች፣ የዳታ ኢንትሪ እና AI ዳታ ሌብሊንግ የመሳሰሉት ስራዎች ምንም የላቀ የእንግሊዝኛ ችሎታ አይጠይቁም። መሰረታዊ ማንበብና መጻፍ ብቻ በቂ ነው።
+          </div>
+        </div>
+
+        <!-- FAQ item 3 -->
+        <div class="glass-card rounded-xl overflow-hidden border border-gray-800 transition">
+          <button class="faq-btn w-full p-5 text-left flex items-center justify-between font-semibold text-white hover:text-brand-400">
+            <span>ክፍያ የሚፈጸመው በምን ያህል ጊዜ ውስጥ ነው?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-gray-300 border-t border-gray-800/60 pt-3">
+            እንደ ስራው አይነት ይለያያል፤ አብዛኞቹ ስራዎች በየሳምንቱ አርብ ወይም በየወሩ መጨረሻ ክፍያ ይፈጽማሉ። ክፍያው በቀጥታ በቴሌብር ወይም በባንክ ሂሳብዎ ይገባል።
+          </div>
+        </div>
+
+        <!-- FAQ item 4 -->
+        <div class="glass-card rounded-xl overflow-hidden border border-gray-800 transition">
+          <button class="faq-btn w-full p-5 text-left flex items-center justify-between font-semibold text-white hover:text-brand-400">
+            <span>ምዝገባ ለማጠናቀቅ ምን ማድረግ አለብኝ?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 transition-transform duration-200"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-sm text-gray-300 border-t border-gray-800/60 pt-3">
+            'ምዝገባ ያጠናቁ' የሚለውን አዝራር በመጫን ወደ ማረጋገጫ ገጹ ይሂዱ፤ መመሪያውን በመከተል ምዝገባዎን በደቂቃዎች ውስጥ አጠናቀው ስራዎችን ማግኘት ይጀምሩ።
+          </div>
+        </div>
+
+      </div>
+
+      <div class="mt-8 text-center">
+        <a href="https://addismobileapps.com/sms.html" class="inline-flex items-center gap-2 text-sm font-semibold text-brand-400 hover:text-brand-300 underline underline-offset-4">
+          <span>ተጨማሪ ማብራሪያ ይፈልጋሉ? ሙሉ መረጃ ያግኙ</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-emerald-900 via-dark-800 to-cyan-950 p-8 sm:p-14 text-center border border-emerald-500/40 shadow-2xl">
+        
+        <div class="relative z-10 max-w-2xl mx-auto space-y-5">
+          <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+            <i data-lucide="clock" class="w-3.5 h-3.5"></i>
+            ክፍት ቦታዎች ከመዘጋታቸው በፊት
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+            የራስዎን የኦንላይን ስራ ዛሬውኑ ይጀምሩ!
+          </h2>
+          <p class="text-gray-300 text-sm sm:text-base">
+            ጊዜዎን ሳያባክኑ በዓለም አቀፍ ደረጃ በዶላር የሚከፍሉ ተመራጭ ስራዎችን ለመቀላቀል ምዝገባዎን አሁን ያጠናቁ።
+          </p>
+          <div class="pt-4">
+            <a href="https://addismobileapps.com/sms.html" class="inline-flex items-center justify-center gap-3 px-10 py-4 rounded-xl text-lg font-bold text-white cta-glow-btn w-full sm:w-auto">
+              <span>ምዝገባ ያጠናቁ</span>
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </a>
+          </div>
+          <p class="text-[12px] text-gray-400 pt-2">
+            🔒 ደህንነቱ የተጠበቀ ምዝገባ • ፈጣን ምላሽ
+          </p>
+        </div>
+
+        <!-- Ambient decorative shapes -->
+        <div class="absolute -top-24 -right-24 w-64 h-64 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -left-24 w-64 h-64 bg-cyan-500/20 rounded-full blur-3xl pointer-events-none"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark-900 border-t border-gray-800 py-12 text-sm text-gray-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
+        
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center text-white">
+            <i data-lucide="globe" class="w-5 h-5"></i>
+          </div>
+          <span class="text-lg font-bold text-white">GlobalWork.et</span>
+          <span class="text-xs text-gray-500">| የዓለም አቀፍ የርቀት ስራዎች ፖርታል</span>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm">
+          <a href="#jobs" class="hover:text-white transition">ስራዎች</a>
+          <a href="#how-it-works" class="hover:text-white transition">አሰራር</a>
+          <a href="#payments" class="hover:text-white transition">ክፍያዎች</a>
+          <a href="https://addismobileapps.com/sms.html" class="hover:text-white transition">ምዝገባ ያጠናቁ</a>
+        </div>
+      </div>
+
+      <div class="pt-6 border-t border-gray-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500 text-center sm:text-left">
+        <p>© 2026 GlobalWork Ethiopia. ሁሉም መብቶች የተጠበቁ ናቸው።</p>
+        <p>ከዓለም አቀፍ ድርጅቶች ጋር የተገናኘ ህጋዊ የኦንላይን የርቀት ስራ እድል አመቻች።</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-dark-900/95 backdrop-blur-lg border-t border-gray-800 px-4 py-3 md:hidden flex items-center justify-between gap-3 shadow-2xl">
+    <div class="flex flex-col">
+      <span class="text-[11px] text-emerald-400 font-semibold flex items-center gap-1">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        ክፍት ቦታዎች እየተጠናቀቁ ነው
+      </span>
+      <span class="text-xs font-bold text-white">ዓለም አቀፍ ስራዎችን ይቀላቀሉ</span>
+    </div>
+    <a href="https://addismobileapps.com/sms.html" class="px-5 py-2.5 rounded-xl font-bold text-sm text-white cta-glow-btn flex items-center gap-1.5 whitespace-nowrap">
+      <span>ምዝገባ ያጠናቁ</span>
+      <i data-lucide="arrow-right" class="w-4 h-4"></i>
+    </a>
+  </div>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Mobile Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on clicking any link inside it
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Job Category Filtering logic
+    function filterJobs(category) {
+      const cards = document.querySelectorAll('.job-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      // Update button active state
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-brand-500', 'text-white', 'shadow-md');
+        btn.classList.add('bg-dark-700', 'text-gray-300');
+      });
+
+      // Highlight clicked button
+      if (event && event.currentTarget) {
+        event.currentTarget.classList.add('bg-brand-500', 'text-white', 'shadow-md');
+        event.currentTarget.classList.remove('bg-dark-700', 'text-gray-300');
+      }
+
+      // Filter cards
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // FAQ Accordion functionality
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        const isOpen = !content.classList.contains('hidden');
+
+        // Close all
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+
+        // Toggle current
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+
+    // Live countdown jitter simulation for urgency
+    let slots = 24;
+    setInterval(() => {
+      if (Math.random() > 0.6 && slots > 5) {
+        slots--;
+        const badge = document.getElementById('slots-badge');
+        if (badge) {
+          badge.textContent = slots;
+          badge.classList.add('text-red-400');
+          setTimeout(() => badge.classList.remove('text-red-400'), 800);
+        }
+      }
+    }, 18000);
+  </script>
+</body>
+</html>
